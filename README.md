@@ -11,5 +11,4 @@ LIST OF INBUILT PYTHON LIBRARIES USED:
 •	Tkinter
 •	Requests
 •	Matplotlib
-•	FigureCanvasTkAgg
 •	Pandas
