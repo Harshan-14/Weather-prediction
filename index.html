@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/global.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    
+    <div class="dav-home-page">
+      <div class="typecentered-nav">
+        <div class="brand">
+          <img class="icon" alt="" src="{{ url_for('static', filename='image/icon.svg') }}" />
+
+          <div class="brandname">WeatherScope</div>
+        </div>
+        <button class="nav-links" id="navLinks">
+          <div class="text-container">
+            <div class="cta">Sign in for updates!</div>
+          </div>
+        </button>
+        <button class="nav-links1" id="navLinks1">
+          <div class="text-container">
+            <div class="cta">Get Live weather data</div>
+          </div>
+        </button>
+      </div>
+      <div
+        class="typehorizontal-inverted"
+        data-scroll-to="typeHorizontalInvertedContainer"
+      >
+        <div class="wrapper">
+          <div class="copy-component">
+            <div class="heading-text">
+              <b class="heading">Plan With Precision</b>
+              <div class="subheading">
+                Accurate weather forecasting for your location.
+              </div>
+            </div>
+            <button class="cta-button">
+              <div class="text-container">
+                <a class="cta2" href="{{url_for('prediction')}}">Start Tracking</a>
+              </div>
+            </button>
+          </div>
+          <img
+            class="image-container-icon"
+            alt=""
+            src="{{ url_for('static', filename='image/image-container@2x.png') }}"
+            
+          />
+        </div>
+      </div>
+      <div class="typeshort-statement">
+        <div class="text-content">
+          <b class="benefit-heading">Our Promise</b>
+          <div class="description">
+            Dedicated to providing the most accurate and personalized weather
+            predictions to help you plan your days.
+          </div>
+        </div>
+      </div>
+      <div class="property-1comprehensive-simpl">
+        <div class="heading-container">
+          <img class="image-lummi" alt="" src="{{ url_for('static', filename='image/image--lummi@2x.png') }}" />
+          
+
+
+
+          <div class="copy-component1">
+            <div class="heading-text">
+              <b class="how-it-works">Our Approach</b>
+              <div class="how-it-works1">
+                Our advanced algorithms deliver reliable weather data.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="how-it-works-grid">
+          <div class="step">
+            <img class="icon-icon" alt="" src="{{ url_for('static', filename='image/icon-icon.svg') }}" />
+            
+
+            <div class="feature-title">Real-Time Data</div>
+            <div class="step-description">
+              Access live weather information with just a click.
+            </div>
+          </div>
+          <div class="step">
+            <img class="icon-icon" alt="" src="{{ url_for('static', filename='image/icon-icon.svg') }}" />
+            
+
+            <div class="feature-title">Future Forecast</div>
+            <div class="step-description">
+              Advanced predictions to plan your week confidently.
+            </div>
+          </div>
+          <div class="step">
+            <img class="icon-icon" alt="" src="{{ url_for('static', filename='image/icon-icon.svg') }}" />
+
+            <div class="feature-title">Weather Trends</div>
+            <div class="step-description">
+              Analyze patterns and prepare for future conditions.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="typebig-image">
+        <img
+          class="benefits-image-lummi"
+          alt=""
+          src="{{ url_for('static', filename='image/benefits-image--lummi@2x.png') }}"
+          
+        />
+
+
+
+              
+
+
+
+        <div class="benefits-copy-container">
+          <div class="copy-component2">
+            <div class="heading-text">
+              <b class="how-it-works">Stay Weather-Aware</b>
+              <div class="how-it-works1">
+                Know the latest weather updates now!
+              </div>
+            </div>
+            <button class="cta-button" onclick="liveweather()">
+              <div class="text-container">
+                <a class="cta2" href="{{url_for('analysis')}}">Know the live weather data</a>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="property-1image-background-"
+        data-scroll-to="property1ImageBackground"
+      >
+
+
+
+
+      
+
+
+
+
+
+        <div class="copy-component3">
+          <div class="heading-container1">
+            <b class="sign-up-heading">Create Account</b>
+            <div class="how-it-works1">Sign up for personalized alerts!</div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div class="label">Email Address</div>
+              <div class="input-form">
+                <input class="text-container4" type="text" />
+              </div>
+            </div>
+            <button class="button">
+              <div class="text-container5">
+                <div class="cta4">Continue with Email</div>
+              </div>
+            </button>
+          </div>
+          <div class="by-continuing-you">
+            By continuing, you accept our Terms and Privacy Policy.
+          </div>
+        </div>
+      </div>
+      <div class="typemega-menu-divider">
+        <div class="content">
+          <div class="info">
+            <div class="brand1">
+              <img class="icon-icon" alt="" src="{{ url_for('static', filename='image/icon.svg') }}" />
+              
+              
+
+              <div class="brandname">WeatherScope</div>
+            </div>
+            <div class="slogan">Predicting Made Easy</div>
+          </div>
+          <div class="links">
+            <div class="list">
+              <div class="list-heading">Features</div>
+              <div class="list-link-item">Accuracy</div>
+              <div class="list-link-item">Alerts</div>
+              <div class="list-link-item">Newsroom</div>
+            </div>
+            <div class="list">
+              <div class="list-heading">Connect</div>
+              <div class="list-link-item">@WeatherPioneer</div>
+              <div class="list-link-item">@WeatherScope</div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="legals">
+          <div class="copyright">© WeatherScope 2024</div>
+          <div class="list2">
+            <div class="list-link-item">Terms</div>
+            <div class="list-link-item">Privacy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      if (navLinks) {
+        navLinks.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='property1ImageBackground']",
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+
+      var navLinks1 = document.getElementById("navLinks1");
+      if (navLinks1) {
+        navLinks1.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='typeHorizontalInvertedContainer']",
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
